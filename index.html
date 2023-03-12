@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle clientes</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/dente-logo.png" type="image/x-icon">
+</head>
+<body>
+    <header id="banner">
+        <div>
+            <h1>Clínica</h1>
+            <p>odontologica</p>
+        </div>
+        <img src="img/dente-logo.png" alt="dente">
+        
+    </header>
+    
+    <div class="darktheme">
+        <label for="switch"> <img id="icondark"src="img/darkmode/escuro.png" alt=""></label>
+        <input type="checkbox"  id="switch">
+    </div>
+    <main>
+       <button id="add-btn">Novo</button>
+        <table id="tabela">
+            <tr class="darktr">
+                <td>Nome</td>
+                <td>Email</td>
+                <td>Contato</td>
+                <td>Data</td>
+                <td>Horário</td>
+                <td>Valor</td>
+                <td>Ação</td>
+            </tr>
+        </table>
+     
+    </main>
+    <section class="hidden wind-cont">
+        <div class="window">
+            <header class="banner-win"><div onclick="closewin()" >x</div></header>
+            <input type="text" placeholder="Nome do cliente" id="client">
+            <input type="email" placeholder="E-mail" id="mail">
+            <input type="text" placeholder="(DDD) 00000-0000" id="contact">
+            <input type="date" id="date">
+            <input type="time" placeholder="Horário" id="hour">
+            <input type="number" placeholder="Valor" id="cash"> <br>
+            <button id="save"></button>
+            <button id="cancelar" onclick="closewin()" >Cancelar</button>
+        </div>
+    </section>
+
+    <!--sidebar-->
+        <div id="circle">
+            <div id="bar1"></div>
+            <div id="bar2"></div>
+            <div id="bar3"></div>
+        </div>
+
+        <section id="sidebar">
+            <ul>
+                <li>Inicio</li>
+            </ul>
+        </section>
+
+
+    <script src="js/sidebar.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/dakrtheme.js"></script>
+
+</body>
+</html>
